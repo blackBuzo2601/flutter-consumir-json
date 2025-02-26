@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:repaso_provider/screens/home_page.dart';
+import 'package:repaso_provider/screens/introduction_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +11,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    //hemos quitado el const que estaba antes de MaterialApp, porque será dinamico
+    return MaterialApp(
+      home: const IntroductionPage(),
+      routes: {
+        //deep linking
+        "/homepage": (context) => HomePage(),
+        "/introductionpage": (context) => IntroductionPage(),
+      },
     );
   }
 }
