@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:repaso_provider/screens/home_page.dart';
-import 'package:repaso_provider/screens/introduction_page.dart';
+import 'package:repaso_provider/screens/shopping_cart.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     //hemos quitado el const que estaba antes de MaterialApp, porque será dinamico
     return MaterialApp(
-      home: const IntroductionPage(),
+      debugShowCheckedModeBanner: false,
+      home: const HomePage(),
       routes: {
         //deep linking
         "/homepage": (context) => HomePage(),
