@@ -43,7 +43,11 @@ class HomePage extends StatelessWidget {
                 child: Row(
                   spacing: 15,
                   children: [
-                    PreviewJuego(),
+                    GestureDetector(
+                      child: PreviewJuego(),
+                      onTap: () =>
+                          Navigator.pushNamed(context, "/productdetail"),
+                    ),
                     PreviewJuego(),
                     PreviewJuego(),
                   ],

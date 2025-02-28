@@ -15,11 +15,11 @@ class MainApp extends StatelessWidget {
     //hemos quitado el const que estaba antes de MaterialApp, porque será dinamico
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const ProductDetail(),
+      home: const HomePage(),
       routes: {
         //deep linking
         "/homepage": (context) => HomePage(),
-        "/introductionpage": (context) => IntroductionPage(),
+        "/productdetail": (context) => ProductDetail(),
       },
     );
   }
