@@ -1,39 +1,59 @@
 import 'package:flutter/material.dart';
 
 class PreviewJuego extends StatelessWidget {
-  const PreviewJuego({super.key});
+  final String rutaImagen;
+  final String nombreJuego;
+  final String anioLanzamiento;
+  final String precioMXN;
+
+  const PreviewJuego(
+      {required this.rutaImagen,
+      required this.nombreJuego,
+      required this.anioLanzamiento,
+      required this.precioMXN,
+      super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 150,
-      height: 270,
+    return Container(
+      color: Colors.blue,
+      width: 190,
+      height: 350,
       child: Column(
         children: [
           SizedBox(
             width: double.infinity,
-            height: 230,
+            height: 190,
             child: Image.asset(
-              "assets/mariokart8deluxe.jpg",
-              fit: BoxFit.fill,
+              rutaImagen,
+              fit: BoxFit.cover,
             ),
           ),
           Expanded(
-            child: Container(
-              constraints: BoxConstraints.expand(),
-              decoration: BoxDecoration(
-                  color: Colors.yellow,
-                  borderRadius: BorderRadius.circular(15)),
-              child: Center(
-                child: Text(
-                  textAlign: TextAlign.center,
-                  "VER PRODUCTO",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Times New Roman",
-                      color: Colors.black),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Título: ",
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                 ),
-              ),
+                Text(
+                  nombreJuego,
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                ),
+                Text(
+                  "Año: $anioLanzamiento",
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                ),
+                Text(
+                  "Precio: $precioMXN",
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                ),
+              ],
             ),
           )
         ],

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:repaso_provider/screens/home_page.dart';
 import 'package:repaso_provider/screens/product_detail.dart';
-import 'package:repaso_provider/screens/shopping_cart.dart';
 
 void main() {
   runApp(const MainApp());
