@@ -3,7 +3,7 @@
     "Nombre": "The Legend of Zelda: Breath of the Wild",
     "AñoLanzamiento": 2017,
     "Descripcion": "Un juego de mundo abierto en el que Link despierta después de 100 años para derrotar a Ganon y salvar Hyrule.",
-    "Imagen": "https://example.com/zelda-botw.jpg",
+    "Imagen": "zelda-botw.jpg",
     "PrecioMXN": 1399,
     "banner": "string"
   },
@@ -11,7 +11,7 @@
     "Nombre": "Super Mario Odyssey",
     "AñoLanzamiento": 2017,
     "Descripcion": "Mario viaja por diferentes reinos en su nave Odyssey para rescatar a la princesa Peach de Bowser.",
-    "Imagen": "https://example.com/super-mario-odyssey.jpg",
+    "Imagen": "super-mario-odyssey.jpg",
     "PrecioMXN": 1299,
     "banner": "string"
   },
@@ -19,7 +19,7 @@
     "Nombre": "Animal Crossing: New Horizons",
     "AñoLanzamiento": 2020,
     "Descripcion": "Un simulador de vida en el que los jugadores pueden construir y personalizar su propia isla tropical.",
-    "Imagen": "https://example.com/animal-crossing-nh.jpg",
+    "Imagen": "animal-crossing-nh.jpg",
     "PrecioMXN": 1199,
     "banner": "string"
   },
@@ -27,7 +27,7 @@
     "Nombre": "Mario Kart 8 Deluxe",
     "AñoLanzamiento": 2017,
     "Descripcion": "Un juego de carreras con personajes de Nintendo, múltiples pistas y modos de juego.",
-    "Imagen": "https://example.com/mario-kart-8.jpg",
+    "Imagen": "mario-kart-8.jpg",
     "PrecioMXN": 1399,
     "banner": "string"
   },
@@ -35,7 +35,7 @@
     "Nombre": "Super Smash Bros. Ultimate",
     "AñoLanzamiento": 2018,
     "Descripcion": "Un juego de lucha que reúne a personajes de diferentes franquicias de videojuegos en batallas épicas.",
-    "Imagen": "https://example.com/smash-bros-ultimate.jpg",
+    "Imagen": "smash-bros-ultimate.jpg",
     "PrecioMXN": 1499,
     "banner": "string"
   },
@@ -43,7 +43,7 @@
     "Nombre": "Splatoon 3",
     "AñoLanzamiento": 2022,
     "Descripcion": "Un shooter en tercera persona donde los jugadores compiten en batallas de pintura.",
-    "Imagen": "https://example.com/splatoon-3.jpg",
+    "Imagen": "splatoon-3.jpg",
     "PrecioMXN": 1299,
     "banner": "string"
   },
@@ -51,7 +51,7 @@
     "Nombre": "Metroid Dread",
     "AñoLanzamiento": 2021,
     "Descripcion": "Samus Aran regresa en una nueva aventura 2D con una intensa exploración y acción.",
-    "Imagen": "https://example.com/metroid-dread.jpg",
+    "Imagen": "metroid-dread.jpg",
     "PrecioMXN": 1399,
     "banner": "string"
   },
@@ -59,7 +59,7 @@
     "Nombre": "Pokémon Legends: Arceus",
     "AñoLanzamiento": 2022,
     "Descripcion": "Un RPG de mundo semiabierto en el que los jugadores exploran la antigua región de Hisui.",
-    "Imagen": "https://example.com/pokemon-legends-arceus.jpg",
+    "Imagen": "pokemon-legends-arceus.jpg",
     "PrecioMXN": 1499,
     "banner": "string"
   },
@@ -67,7 +67,7 @@
     "Nombre": "Fire Emblem: Three Houses",
     "AñoLanzamiento": 2019,
     "Descripcion": "Un juego de estrategia por turnos con una historia profunda y elementos de RPG.",
-    "Imagen": "https://example.com/fire-emblem-three-houses.jpg",
+    "Imagen": "fire-emblem-three-houses.jpg",
     "PrecioMXN": 1199,
     "banner": "string"
   },
@@ -75,7 +75,7 @@
     "Nombre": "Xenoblade Chronicles 3",
     "AñoLanzamiento": 2022,
     "Descripcion": "Un épico RPG de acción con un mundo abierto lleno de aventuras y combates estratégicos.",
-    "Imagen": "https://example.com/xenoblade-chronicles-3.jpg",
+    "Imagen": "xenoblade-chronicles-3.jpg",
     "PrecioMXN": 1499,
     "banner": "string"
   },
@@ -83,7 +83,7 @@
     "Nombre": "Luigi's Mansion 3",
     "AñoLanzamiento": 2019,
     "Descripcion": "Luigi explora un hotel encantado lleno de misterios y fantasmas en esta aventura.",
-    "Imagen": "https://example.com/luigis-mansion-3.jpg",
+    "Imagen": "luigis-mansion-3.jpg",
     "PrecioMXN": 1299,
     "banner": "string"
   },
@@ -91,7 +91,7 @@
     "Nombre": "Kirby and the Forgotten Land",
     "AñoLanzamiento": 2022,
     "Descripcion": "Kirby explora un mundo 3D en una de sus aventuras más ambiciosas.",
-    "Imagen": "https://example.com/kirby-forgotten-land.jpg",
+    "Imagen": "kirby-forgotten-land.jpg",
     "PrecioMXN": 1199,
     "banner": "string"
   },
@@ -99,7 +99,7 @@
     "Nombre": "Bayonetta 3",
     "AñoLanzamiento": 2022,
     "Descripcion": "La bruja de Umbra regresa con más acción y combates espectaculares.",
-    "Imagen": "https://example.com/bayonetta-3.jpg",
+    "Imagen": "bayonetta-3.jpg",
     "PrecioMXN": 1399,
     "banner": "string"
   },
@@ -107,7 +107,7 @@
     "Nombre": "Donkey Kong Country: Tropical Freeze",
     "AñoLanzamiento": 2018,
     "Descripcion": "Un desafiante juego de plataformas con gráficos vibrantes y acción intensa.",
-    "Imagen": "https://example.com/donkey-kong-tropical-freeze.jpg",
+    "Imagen": "donkey-kong-tropical-freeze.jpg",
     "PrecioMXN": 999,
     "banner": "string"
   },
@@ -115,7 +115,7 @@
     "Nombre": "Pikmin 4",
     "AñoLanzamiento": 2023,
     "Descripcion": "Un juego de estrategia en tiempo real donde los jugadores controlan a pequeñas criaturas llamadas Pikmin.",
-    "Imagen": "https://example.com/pikmin-4.jpg",
+    "Imagen": "pikmin-4.jpg",
     "PrecioMXN": 1299,
     "banner": "string"
   }
