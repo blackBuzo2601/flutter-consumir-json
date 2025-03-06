@@ -4,6 +4,7 @@ class Juego {
   final String descripcion;
   final String imagen;
   final String precioMXN;
+  final String banner;
 
   Juego({
     required this.nombre,
@@ -11,6 +12,7 @@ class Juego {
     required this.descripcion,
     required this.imagen,
     required this.precioMXN,
+    required this.banner,
   });
 
   factory Juego.fromJson(Map<String, dynamic> json) {
@@ -19,6 +21,7 @@ class Juego {
       anioLanzamiento: json['AñoLanzamiento'],
       descripcion: json['Descripcion'],
       imagen: json['Imagen'],
+      banner: json['banner'],
       precioMXN: json['PrecioMXN'],
     );
   }

@@ -5,110 +5,164 @@ class ProductDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("Comprar articulo"),
-        leading: Icon(Icons.videogame_asset),
-      ),
-      body: Container(
-          padding: EdgeInsets.all(15),
+    final arguments =
+        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
+
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text("Comprar artículo"),
+          leading: const Icon(Icons.videogame_asset),
+        ),
+        body: Container(
+          padding: const EdgeInsets.all(10),
           width: double.infinity,
           height: double.infinity,
-          color: Colors.blue,
-          child: Column(
-            children: [
-              Container(
-                width: double.infinity,
-                height: 240,
-                color: Colors.orange,
-                child: Image.asset(
-                  "assets/mariokart8banner.jpg",
-                  fit: BoxFit.fill,
-                ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Container(
-                width: double.infinity,
-                height: 80,
-                decoration: BoxDecoration(
-                    color: Colors.yellow,
-                    borderRadius: BorderRadius.circular(25)),
-                child: Center(
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
-                    child: Text(
-                      textAlign: TextAlign.justify,
-                      "The legend of zelda: Breath of the wild",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontFamily: "Times New Roman",
-                          fontSize: 22),
+          color: const Color.fromARGB(
+              255, 169, 184, 76), // Mismo color de fondo que home_page.dart
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // Banner del juego
+                Container(
+                  width: double.infinity,
+                  height: 250,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.3),
+                        blurRadius: 10,
+                        offset: const Offset(0, 5),
+                      ),
+                    ],
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Image.asset(
+                      arguments["banner"],
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                width: double.infinity,
-                height: 60,
-                decoration: BoxDecoration(
-                    color: Colors.yellow,
-                    borderRadius: BorderRadius.circular(25)),
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                const SizedBox(height: 15),
+                // Nombre del juego
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 5,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: Center(
+                    child: Text(
+                      arguments["nombre"],
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                // Año y precio
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 5,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        textAlign: TextAlign.justify,
-                        "Lanzamiento: 2015",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontFamily: "Times New Roman",
-                            fontSize: 16),
+                        "Año de lanzamiento: ${arguments["anioLanzamiento"]}",
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
                       ),
                       Text(
-                        textAlign: TextAlign.justify,
-                        "Género: Acción",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontFamily: "Times New Roman",
-                            fontSize: 16),
+                        "Precio: ${arguments["precioMXN"]}",
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
                       ),
                     ],
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Container(
-                width: double.infinity,
-                height: 180,
-                color: Colors.orange,
-                child: SingleChildScrollView(
+                const SizedBox(height: 15),
+                // Descripción del juego
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 5,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: SingleChildScrollView(
                     child: Text(
-                        textAlign: TextAlign.justify,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontFamily: "Courier ",
-                            fontSize: 16),
-                        "The Legend of Zelda: Breath of the Wild es un videojuego de acción y aventura desarrollado por Nintendo y lanzado en 2017 para Nintendo Switch y Wii U. Ambientado en un vasto mundo abierto, sigue a Link, quien despierta tras un siglo de letargo para derrotar a Ganon y salvar Hyrule. El juego ofrece exploración libre, mecánicas de física avanzada y un sistema dinámico de clima y supervivencia. Los jugadores pueden escalar montañas, cocinar, resolver acertijos en santuarios y usar diversas armas en combate. Su innovador diseño redefinió los juegos de mundo abierto y fue galardonado como Juego del Año. Su impacto en la industria sigue siendo enorme.")),
-              ),
-              SizedBox(height: 15),
-              Container(
-                width: double.infinity,
-                height: 70,
-                color: Colors.green,
-              )
-            ],
-          )),
+                      arguments["descripcion"],
+                      textAlign: TextAlign.justify,
+                      style: const TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 15),
+                // Botón de compra
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 15),
+                      backgroundColor: Colors.green,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      "Agregar al carrito",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

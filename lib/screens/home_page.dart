@@ -66,9 +66,21 @@ class _HomePageState extends State<HomePage> {
                           nombreJuego: juego["Nombre"],
                           anioLanzamiento: juego["AñoLanzamiento"],
                           precioMXN: juego["PrecioMXN"],
+                          descripcion: juego["Descripcion"],
+                          banner: juego["banner"],
                         ),
-                        onTap: () =>
-                            Navigator.pushNamed(context, "/productdetail"),
+                        onTap: () => Navigator.pushNamed(
+                          context,
+                          "/productdetail",
+                          arguments: {
+                            "nombre": juego["Nombre"],
+                            "anioLanzamiento": juego["AñoLanzamiento"],
+                            "precioMXN": juego["PrecioMXN"],
+                            "descripcion": juego["Descripcion"],
+                            "banner": juego["banner"],
+                            "rutaImagen": juego["Imagen"],
+                          },
+                        ),
                       );
                     }).toList(),
                   ),
@@ -86,9 +98,21 @@ class _HomePageState extends State<HomePage> {
                           nombreJuego: juego["Nombre"],
                           anioLanzamiento: juego["AñoLanzamiento"],
                           precioMXN: juego["PrecioMXN"],
+                          descripcion: juego["Descripcion"],
+                          banner: juego["banner"],
                         ),
-                        onTap: () =>
-                            Navigator.pushNamed(context, "/productdetail"),
+                        onTap: () => Navigator.pushNamed(
+                          context,
+                          "/productdetail",
+                          arguments: {
+                            "nombre": juego["Nombre"],
+                            "anioLanzamiento": juego["AñoLanzamiento"],
+                            "precioMXN": juego["PrecioMXN"],
+                            "descripcion": juego["Descripcion"],
+                            "banner": juego["banner"],
+                            "rutaImagen": juego["Imagen"],
+                          },
+                        ),
                       );
                     }).toList(),
                   ),
