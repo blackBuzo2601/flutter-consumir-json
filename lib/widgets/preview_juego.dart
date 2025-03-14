@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PreviewJuego extends StatelessWidget {
-  final String rutaImagen;
+/*   final String rutaImagen;
   final String nombreJuego;
   final String anioLanzamiento;
   final String precioMXN;
@@ -16,7 +16,7 @@ class PreviewJuego extends StatelessWidget {
       required this.descripcion,
       required this.banner,
       super.key});
-
+ */
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,10 +44,10 @@ class PreviewJuego extends StatelessWidget {
             child: SizedBox(
               width: double.infinity,
               height: 190,
-              child: Image.asset(
+              /* child: Image.asset(
                 rutaImagen,
                 fit: BoxFit.cover,
-              ),
+              ), */
             ),
           ),
           Expanded(
@@ -56,7 +56,7 @@ class PreviewJuego extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  /* Text(
                     nombreJuego,
                     textAlign: TextAlign.left,
                     style: TextStyle(
@@ -64,24 +64,24 @@ class PreviewJuego extends StatelessWidget {
                       fontSize: 16,
                       color: Colors.black87,
                     ),
-                  ),
+                  ), */
                   SizedBox(height: 8),
-                  Text(
+                  /* Text(
                     "Año: $anioLanzamiento",
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.grey[700],
                     ),
-                  ),
+                  ), */
                   SizedBox(height: 4),
-                  Text(
+                  /* Text(
                     "Precio: \$ $precioMXN",
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.grey[700], // Color del precio actualizado
                       fontWeight: FontWeight.bold, // Negritas como el título
                     ),
-                  ),
+                  ), */
                 ],
               ),
             ),

@@ -1,0 +1,116 @@
+{
+  "juegos": [
+    {
+      "Nombre": "The Legend of Zelda: A Link Between Worlds",
+      "anioLanzamiento": "2013",
+      "Descripcion": "Un juego de aventura en el que Link debe salvar Hyrule viajando entre mundos paralelos.",
+      "Imagen": "assets/zelda-albw.jpg",
+      "PrecioMXN": "1299",
+      "banner": "assets/linkbanner.jpg"
+    },
+    {
+      "Nombre": "Super Mario 3D Land",
+      "anioLanzamiento": "2011",
+      "Descripcion": "Mario se aventura en 16 mundos 3D para salvar a la princesa Peach de Bowser.",
+      "Imagen": "assets/super-mario-3d-land.jpg",
+      "PrecioMXN": "999",
+      "banner": "assets/mario3dbanner.jpg"
+    },
+    {
+      "Nombre": "Animal Crossing: New Leaf",
+      "anioLanzamiento": "2012",
+      "Descripcion": "Un simulador de vida en el que los jugadores pueden personalizar su ciudad y sus relaciones con los vecinos.",
+      "Imagen": "assets/animal-crossing-new-leaf.jpg",
+      "PrecioMXN": "1199",
+      "banner": "assets/animalbanner.jpg"
+    },
+    {
+      "Nombre": "Mario Kart 7",
+      "anioLanzamiento": "2011",
+      "Descripcion": "Un juego de carreras donde Mario y sus amigos compiten en pistas llenas de sorpresas.",
+      "Imagen": "assets/mariokart7.jpg",
+      "PrecioMXN": "1099",
+      "banner": "assets/mk7banner.jpg"
+    },
+    {
+      "Nombre": "Super Smash Bros. for 3DS",
+      "anioLanzamiento": "2014",
+      "Descripcion": "Un juego de lucha que reúne a personajes de varias franquicias de Nintendo.",
+      "Imagen": "assets/super-smash-bros-3ds.jpg",
+      "PrecioMXN": "1399",
+      "banner": "assets/smashbanner.jpg"
+    },
+    {
+      "Nombre": "Luigi's Mansion: Dark Moon",
+      "anioLanzamiento": "2013",
+      "Descripcion": "Luigi se enfrenta a fantasmas y resuelve rompecabezas en esta aventura en 3D.",
+      "Imagen": "assets/luigis-mansion-dark-moon.jpg",
+      "PrecioMXN": "1299",
+      "banner": "assets/luigibanner.jpg"
+    },
+    {
+      "Nombre": "Metroid: Samus Returns",
+      "anioLanzamiento": "2017",
+      "Descripcion": "Samus Aran regresa en una nueva aventura en 2D, remasterizada con nuevas mecánicas de juego.",
+      "Imagen": "assets/metroid-samus-returns.jpg",
+      "PrecioMXN": "1499",
+      "banner": "assets/metroidbanner.jpg"
+    },
+    {
+      "Nombre": "Pokémon X y Y",
+      "anioLanzamiento": "2013",
+      "Descripcion": "Una nueva generación de Pokémon que introduce el mundo 3D y nuevas especies.",
+      "Imagen": "assets/pokemon-x-y.jpg",
+      "PrecioMXN": "1399",
+      "banner": "assets/pokemonbanner.jpg"
+    },
+    {
+      "Nombre": "Fire Emblem: Awakening",
+      "anioLanzamiento": "2012",
+      "Descripcion": "Un juego de estrategia por turnos con una historia profunda y personajes carismáticos.",
+      "Imagen": "assets/fire-emblem-awakening.jpg",
+      "PrecioMXN": "1299",
+      "banner": "assets/firebanner.jpg"
+    },
+    {
+      "Nombre": "Xenoblade Chronicles 3D",
+      "anioLanzamiento": "2015",
+      "Descripcion": "Un RPG de acción que lleva a los jugadores a un mundo abierto y épicas batallas en 3D.",
+      "Imagen": "assets/xenoblade-chronicles-3d.jpg",
+      "PrecioMXN": "1599",
+      "banner": "assets/xenobanner.jpg"
+    },
+    {
+      "Nombre": "Kirby: Triple Deluxe",
+      "anioLanzamiento": "2014",
+      "Descripcion": "Kirby se aventura en un mundo 3D lleno de plataformas y enemigos coloridos.",
+      "Imagen": "assets/kirby-triple-deluxe.jpg",
+      "PrecioMXN": "1199",
+      "banner": "assets/kirbybanner.jpg"
+    },
+    {
+      "Nombre": "Bayonetta 2",
+      "anioLanzamiento": "2014",
+      "Descripcion": "La bruja de Umbra regresa con intensos combates y acción vertiginosa en esta secuela.",
+      "Imagen": "assets/bayonetta-2.jpg",
+      "PrecioMXN": "1599",
+      "banner": "assets/bayobanner.jpg"
+    },
+    {
+      "Nombre": "Donkey Kong Country Returns 3D",
+      "anioLanzamiento": "2013",
+      "Descripcion": "Un juego de plataformas en 3D con Donkey Kong enfrentando a enemigos y desafiantes niveles.",
+      "Imagen": "assets/donkey-kong-country-returns-3d.jpg",
+      "PrecioMXN": "999",
+      "banner": "assets/donkeybanner.jpg"
+    },
+    {
+      "Nombre": "Pikmin 3D",
+      "anioLanzamiento": "2015",
+      "Descripcion": "Una versión especial de Pikmin para 3DS, donde los jugadores guían a pequeños Pikmin en misiones de rescate.",
+      "Imagen": "assets/pikmin-3d.jpg",
+      "PrecioMXN": "1199",
+      "banner": "assets/pikminbanner.jpg"
+    }
+  ]
+}
